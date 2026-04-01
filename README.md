@@ -1,71 +1,39 @@
-# HCI Lab 5B – Three.js Setup and Basic 3D Cube
+HCI Lab 5B – Three.js Colored Cube
+📌 Overview
 
-## 📌 Overview
+This lab introduces Three.js in a React environment and demonstrates how to create and animate a 3D cube. The focus is on understanding scenes, cameras, renderers, and materials, with emphasis on human-computer interaction principles like visual clarity and feedback.
 
-This lab demonstrates the basic setup of **Three.js** within a React environment and introduces fundamental concepts of rendering a 3D object. The task focuses on creating a simple animated cube using Three.js to understand how scenes, cameras, and rendering work together.
-
----
-
-## 🎯 Purpose of the Lab
-
-The main objective of this lab is to:
-
-* Learn how to **install and integrate Three.js** in a project
-* Understand the core components of a 3D scene:
-
-  * Scene
-  * Camera
-  * Renderer
-* Create and render a **basic 3D cube**
-* Implement **animation using a render loop**
-* Practice clean integration of Three.js with **React (using hooks)**
-
----
-
-## ⚙️ What This Project Does
-
-* Sets up a **Three.js scene**
-* Creates a **perspective camera**
-* Initializes a **WebGL renderer**
-* Adds a **3D cube (BoxGeometry)**
-* Applies a **basic material with color**
-* Animates the cube with continuous **rotation**
-* Properly cleans up resources when the component unmounts
-
----
-
-## 🧩 Key Concepts Used
-
-* `THREE.Scene()` → Holds all objects in the 3D world
-* `THREE.PerspectiveCamera()` → Defines the viewing perspective
-* `THREE.WebGLRenderer()` → Renders the scene to the browser
-* `THREE.BoxGeometry()` → Creates cube shape
-* `THREE.MeshBasicMaterial()` → Adds color to the cube
-* `requestAnimationFrame()` → Handles smooth animation loop
-* React Hooks:
-
-  * `useEffect` → Lifecycle handling
-  * `useRef` → DOM reference for mounting renderer
-
----
-
-## 📁 Project Structure
-
-* `Cube.js` → Contains Three.js setup and animation logic
-* `App.js` → Renders the Cube component
-
----
-
-## 🚀 Outcome
-
-By completing this lab, we gain a foundational understanding of:
-
-* How 3D graphics are rendered in the browser
-* How to integrate **Three.js with React**
-* How animation works in real-time rendering
-
-This serves as a starting point for building more complex 3D applications such as interactive scenes, games, or visual simulations.
-
+🎯 Objectives
+Integrate Three.js into a React project
+Understand core 3D components: Scene, Camera, Renderer
+Create a cube with different colors on each face
+Implement smooth rotation animation
+Learn clean React integration using hooks (useEffect, useRef)
+⚙️ Features
+3D Scene Setup – All objects live in a THREE.Scene
+Perspective Camera – Defines viewing angle and depth
+WebGL Renderer – Displays the scene in the browser
+Multi-Colored Cube – Each face can have a unique color
+Animation Loop – Smooth rotation using requestAnimationFrame
+Resource Cleanup – Removes renderer and disposes resources on unmount
+🧩 Key Concepts
+THREE.Scene() → Container for all 3D objects
+THREE.PerspectiveCamera() → Viewing perspective
+THREE.WebGLRenderer() → Renders the scene
+THREE.BoxGeometry() → Defines cube shape
+THREE.MeshBasicMaterial() → Assigns color/material per cube face
+requestAnimationFrame() → Smooth animation loop
+React Hooks:
+useEffect → Lifecycle management
+useRef → DOM mounting point
+📁 Project Structure
+Cube.js → Contains the Three.js cube setup and animation
+App.js → Renders the Cube component
+🚀 Outcome
+Learn to render 3D graphics in the browser
+Integrate Three.js with React efficiently
+Apply HCI principles for visual clarity (different cube face colors, smooth rotation)
+Prepare for building more interactive 3D applications, like games or simulations
 ---
 
 ## 📌 Conclusion
